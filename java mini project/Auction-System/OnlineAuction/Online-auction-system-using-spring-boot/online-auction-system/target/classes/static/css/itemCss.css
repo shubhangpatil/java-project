@@ -1,0 +1,195 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  /* .logo{
+    background-image: url('small_logo.jpg');
+  } */
+
+  /* .logo{
+    display: flex;
+    background-color: #d04a4a;
+    padding: 10px;
+  } */
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  nav li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section Styles */
+  /* .hero {
+    background-image: url('b.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .hero {
+    /* background-image: url("./images/start.jpg");   */
+    background-color: #4CAF50;
+    background-size: cover;
+    background-position: center;
+    height: 650px; /* decrease the height to make it smaller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: px; /* add border-radius to curve the edges */
+    text-align: center;
+  }
+
+  /* .intro{
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #949292;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } */
+  
+  .hero h1,
+  .hero h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  /* Main Content Styles */
+  #main {
+    padding: 70px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.item h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.max-price {
+    margin-bottom: 20px;
+}
+
+.max-price span:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #010428;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #4CAF50;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.intro {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    /* background-color: #949292; */
+    border-radius: 5px;
+   
+}
+/* Main Styles */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px;
+} 
+
+Items Styles /
+/* .items {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 40px;
+}
+
+.item {
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+} */
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: calc(33.33% - 50px);
+    margin-bottom: 40px;
+    background-color: #c0bfbf;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .item:hover {
+    transform: scale(1.2);
+  }
+
+.item img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+border-radius: 10px;
+}
+
+.item h3 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.item p {
+margin-bottom: 20px;
+}
+
+.bid {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.bid span {
+font-weight: bold;
+}
+
+.bid button {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.bid button:hover {
+background-color: #4CAF50;
+}
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 0;
+}

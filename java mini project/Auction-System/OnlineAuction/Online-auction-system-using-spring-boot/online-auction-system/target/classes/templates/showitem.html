@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Auction</title>
+    <link rel="stylesheet" href="./css/showitemCss.css">
+</head>
+<body>
+<header>
+    <div class="logo">Online auction</div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/start}" method="get">Home</a></li>
+            <li><a th:href="@{/sellitem}" method="get">Sell Item</a></li>
+            <li><a th:href="@{/showitem}" method="get">Show Item</a></li>
+            <li><a th:href="@{/logout}" method="get">Log Out</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main id="main">
+    <h2>Featured Items</h2>
+    <div class="items">
+        <div th:each="item : ${items}" class="item">
+            <a th:href="@{/item/{id}(id=${item.id})}" method="get">
+                <!-- <img th:src="@{/img/{name}(name=${item.imageName})}" alt="Item Image"> -->
+                <h3 th:text="${item.name}"></h3>
+                <p th:text="${item.description}"></p>
+                <div class="bid">
+                    <span th:text="${item.maxPrice}"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+
+
+
+</body>
+</html>
